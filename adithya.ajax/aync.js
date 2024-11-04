@@ -1,6 +1,7 @@
 function makewaffle(){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
+            console.log("waffle is ready")
             resolve("waffle ready")
         },2500);
     })
@@ -11,6 +12,7 @@ function getIcecream(){
         setTimeout(()=>{
             let icecream=true;
             if(icecream){
+                console.log("got icecream")
                 resolve("got icecream")
             }else{
                 reject("did not get icecream")
